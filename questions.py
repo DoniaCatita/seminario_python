@@ -12,7 +12,7 @@ válido en Python?",
 dos valores son iguales?",
 ]
 # Respuestas posibles para cada pregunta, en el mismo orden
-que las preguntas
+# que las preguntas
 answers = [
 ("size()", "len()", "length()", "count()"),
 ("3.14", "'42'", "10", "True"),
@@ -25,8 +25,8 @@ answers = [
 ),
 ("=", "==", "!=", "==="),
 ]
-# Índice de la respuesta correcta para cada pregunta, el el
-mismo orden que las preguntas
+# Índice de la respuesta correcta para cada pregunta, el
+# mismo orden que las preguntas
 correct_answers_index = [1, 2, 0, 3, 1]
 # El usuario deberá contestar 3 preguntas
 for _ in range(3):
@@ -37,7 +37,7 @@ print(questions[question_index])
 for i, answer in enumerate(answers[question_index]):
 print(f"{i + 1}. {answer}")
 # El usuario tiene 2 intentos para responder
-correctamente
+# correctamente
 for intento in range(2):
 user_answer = int(input("Respuesta: ")) - 1
 # Se verifica si la respuesta es correcta
@@ -47,8 +47,7 @@ print("¡Correcto!")
 break
 else:
 # Si el usuario no responde correctamente después de
-2 intentos,
-# se muestra la respuesta correcta
+# 2 intentos, se muestra la respuesta correcta
 print("Incorrecto. La respuesta correcta es:")
 print(answers[question_index]
 [correct_answers_index[question_index]])
