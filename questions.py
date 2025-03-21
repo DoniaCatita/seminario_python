@@ -36,7 +36,9 @@ for _ in range(3):
     # correctamente
     for intento in range(2):
         user_answer = input("Respuesta: ")
-        if(not user_answer.isdigit() or not (1 <= int(user_answer) <= 4)): exit(1)
+        if(not user_answer.isdigit() or not (1 <= int(user_answer) <= 4)): 
+            print("respuesta no válida")
+            exit(1)
         user_answer = int(user_answer) - 1
         # Se verifica si la respuesta es correcta
         if user_answer == correct_answers_index[question_index]:
