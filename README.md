@@ -1,2 +1,2 @@
-nombre: Catalina Brochero
-legajo: 26819/8 
+Nombre: Catalina Brochero.  
+Legajo: 26819/8.  
