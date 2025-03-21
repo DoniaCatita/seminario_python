@@ -35,7 +35,9 @@ for _ in range(3):
     # El usuario tiene 2 intentos para responder
     # correctamente
     for intento in range(2):
-        user_answer = int(input("Respuesta: ")) - 1
+        user_answer = input("Respuesta: ")
+        if(not user_answer.isdigit() or not (1 <= int(user_answer) <= 4)): exit(1)
+        user_answer = int(user_answer) - 1
         # Se verifica si la respuesta es correcta
         if user_answer == correct_answers_index[question_index]:
             print("¡Correcto!")
