@@ -28,8 +28,8 @@ correct_answers_index = [1, 2, 0, 3, 1]
 
 score = 0
 
-#creo una lista de tuplas con 3 preguntas aleatorias, sus opciones y rtas
-questions_to_ask = random.choices(list(zip(questions, 
+#creo una lista de tuplas con 3 preguntas aleatorias, sus opciones y rtas (sin repetir preguntas)
+questions_to_ask = random.sample(list(zip(questions, 
 answers, correct_answers_index)), k=3)
 for qs, ans, cor_ans in questions_to_ask:
     # Se muestra la pregunta y las respuestas posibles
