@@ -55,6 +55,6 @@ for qs, ans, cor_ans in questions_to_ask:
         # 2 intentos, se muestra la respuesta correcta
         print("Incorrecto. La respuesta correcta es:")
         print(ans[cor_ans])
-# Se imprime un blanco al final de la pregunta
-print()
+    # Se imprime un blanco al final de la pregunta
+    print()
 print(f"Tu puntaje es de {score}")
